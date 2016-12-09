@@ -1,4 +1,4 @@
-### lorem-ipsum.js
+### lorem-ipsum-japanese
 
 lorem-ipsum-japanese is a Node.js and Component.js module for generating passages of japanese like text using lorem ipsum interface and algorithm. Lorem ipsum text is commonly used as placeholder text in publishing, graphic design, and web development.
 
