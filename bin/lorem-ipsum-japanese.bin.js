@@ -8,7 +8,7 @@ var options    = {}
   , arguments  = optimist.argv
   , loremIpsum = '';
 
-// Allow CLI user to run command with plain english. E.g. "lorem-ipsum 1 sentence" or "lorem-ipsum 3 words --copy"
+// Allow CLI user to run command with plain english. E.g. "lorem-ipsum-japanese 1 sentence" or "lorem-ipsum-japanese 3 words --copy"
 var nakedArguments = arguments._;
 if (nakedArguments.length >= 2) {
   arguments.count = nakedArguments[0]; // Clobber count.
@@ -17,7 +17,7 @@ if (nakedArguments.length >= 2) {
 
 options.units  = arguments.units || 'sentences';
 options.count  = arguments.count || 1;
-options.copy   = arguments.copy ? true : false;
+options.copy = !!arguments.copy;
 options.format = arguments.format || 'plain'; 
 
 // Generate the lorem ipsum text and print it out.
